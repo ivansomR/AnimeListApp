@@ -84,11 +84,7 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewHo
             intent.putExtra("type", anime.getType());
             intent.putExtra("genres", anime.getGenre());
             intent.putExtra("synopsis", anime.getSynopsis());
-            intent.putExtra("episodes", anime.getEpisodes());
-            intent.putExtra("score", anime.getScore());
-            intent.putExtra("mylist", anime.isMylist());
-            intent.putExtra("favorite", anime.isFavorite());
-            intent.putExtra("status", anime.getStatus());
+            intent.putExtra("episodes", String.valueOf(anime.getEpisodes()));
 
             this.context.startActivity(intent);
         }

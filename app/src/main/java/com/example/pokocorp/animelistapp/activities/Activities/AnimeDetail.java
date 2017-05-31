@@ -41,6 +41,7 @@ public class AnimeDetail extends AppCompatActivity {
         TV_type.setText(getIntent().getStringExtra("type"));
         TV_genres.setText(getIntent().getStringExtra("genres"));
         TV_synopsis.setText(getIntent().getStringExtra("synopsis"));
+        TV_episodes.setText(getIntent().getStringExtra("episodes"));
 
     }
 
