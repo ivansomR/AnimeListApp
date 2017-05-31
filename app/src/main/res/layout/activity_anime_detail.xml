@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/anime_image_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ansatsu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/anime_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anime_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@color/detail_text"
+            android:layout_alignTop="@+id/anime_image_detail"
+            android:layout_toRightOf="@+id/anime_image_detail"
+            android:layout_toEndOf="@+id/anime_image_detail"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/anime_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/detail_text"
+            android:layout_below="@+id/anime_title"
+            android:layout_alignLeft="@+id/anime_title"
+            android:layout_alignStart="@+id/anime_title" />
+
+        <Button
+            android:id="@+id/add_mylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/anime_image_detail"
+            android:layout_alignLeft="@+id/anime_image_detail"
+            android:layout_alignRight="@+id/anime_image_detail"
+            android:layout_alignStart="@+id/anime_image_detail"
+            android:layout_below="@+id/anime_image_detail"
+            android:layout_marginTop="19dp"
+            android:background="@color/add_button_background"
+            android:gravity="center"
+            android:text="@string/button_add_mylist"
+            android:textAlignment="gravity"
+            android:textColor="@color/add_button_text"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/add_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/add_button_background"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:text="@string/button_add_favorites"
+            android:textAlignment="gravity"
+            android:textColor="@color/add_button_text"
+            android:textSize="12sp"
+            android:layout_alignTop="@+id/add_mylist"
+            android:layout_alignRight="@+id/episodes_detail"
+            android:layout_alignEnd="@+id/episodes_detail" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/add_mylist"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignStart="@+id/add_mylist"
+            android:layout_below="@+id/add_mylist"
+            android:layout_marginTop="21dp"
+            android:text="@string/anime_genre"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/detail_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/genres_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action, Comedy, School, Shounen"
+            android:textColor="@color/detail_anime_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anime_episodes"
+            android:textColor="@color/detail_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/anime_image_detail"
+            android:layout_alignLeft="@+id/anime_type"
+            android:layout_alignStart="@+id/anime_type" />
+
+        <TextView
+            android:id="@+id/episodes_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22"
+            android:textStyle="bold"
+            android:textColor="@color/detail_anime_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/anime_synopsis"
+            android:textColor="@color/detail_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_below="@+id/genres_detail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/anime_sysnopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView19"
+            android:textColor="#000000"
+            android:text="When a mysterious creature chops the moon down to a permanent crescent, the students of class 3-E of Kunugigaoka Middle School find themselves confronted with an enormous task: assassinate the creature responsible for the disaster before Earth suffers a similar fate. However, the monster, dubbed Koro-sensei (the indestructible teacher), is able to fly at speeds of up to Mach 20, which he demonstrates freely, leaving any attempt to subdue him in his extraterrestrial dust. Furthermore, the misfits of 3-E soon find that the strange, tentacled beast is more than just indomitable—he is the best teacher they have ever had!"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

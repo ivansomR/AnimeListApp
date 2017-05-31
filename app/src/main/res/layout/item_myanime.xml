@@ -45,7 +45,6 @@
             android:layout_below="@+id/TV_state"
             android:layout_toRightOf="@+id/IV_image"
             android:background="#ffd5d5d5">
-
         </View>
 
         <EditText

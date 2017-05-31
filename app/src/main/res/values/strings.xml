@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">AnimeList</string>
+    <string name="anime_detail">Anime Detail</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,5 +9,14 @@
     <string name="msg_home">Home</string>
     <string name="msg_mylist">MyList</string>
     <string name="msg_fav">Favorites</string>
+
     <string name="anime_name">Ansatsu Kyoushitsu</string>
+    <string name="anime_type">Type</string>
+    <string name="anime_genre">Genres</string>
+    <string name="anime_synopsis">Synopsis</string>
+    <string name="anime_episodes">Episodes</string>
+    <string name="anime_score">Score</string>
+
+    <string name="button_add_mylist">Add to MyList</string>
+    <string name="button_add_favorites">Add to Favorites</string>
 </resources>

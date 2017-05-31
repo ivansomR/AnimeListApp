@@ -27,7 +27,7 @@ public class Home extends Fragment {
     private GridLayoutManager gLayout;
     @BindView(R.id.RV_anime_home)
     RecyclerView animeHome;
-    private List<Anime> animes;
+    private ArrayList<Anime> animes;
 
     public Home() {
         // Required empty public constructor

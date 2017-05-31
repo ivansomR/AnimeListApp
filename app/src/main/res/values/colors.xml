@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorText">#ffd5d5d5</color>
+    <color name="add_button_background">#3393d1</color>
+    <color name="add_button_text">#fafafa</color>
+    <color name="detail_text">#3faefb</color>
+    <color name="detail_anime_text">#000000</color>
+    <color name="detail_separator">#ffc5fe</color>
 </resources>
