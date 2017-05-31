@@ -8,12 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.pokocorp.animelistapp.R;
+import com.example.pokocorp.animelistapp.activities.Models.Anime;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+import java.util.ArrayList;
+
 public class Mylist extends Fragment {
-
+    private ArrayList<Anime> animes;
 
     public Mylist() {
         // Required empty public constructor

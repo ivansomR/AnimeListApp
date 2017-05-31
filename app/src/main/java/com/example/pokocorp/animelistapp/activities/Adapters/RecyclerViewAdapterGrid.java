@@ -88,6 +88,14 @@ public class RecyclerViewAdapterGrid extends RecyclerView.Adapter<RecyclerViewHo
 
             this.context.startActivity(intent);
         }
+
+        public void setFilter(ArrayList<Anime> newList) {
+            animeList = new ArrayList<>();
+            animeList.addAll(newList);
+
+            notifyDataSetChanged();
+
+        }
     }
 }
 

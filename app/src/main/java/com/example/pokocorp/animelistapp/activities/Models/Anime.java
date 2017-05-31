@@ -75,21 +75,4 @@ public class Anime implements Serializable{
     public boolean isFavorite() {
         return favorite;
     }
-
-    public void setMylist(boolean mylist){
-        if (mylist != false){
-            mylist = true;
-        }else{
-            mylist = false;
-        }
-    }
-
-    public void setFavorite(boolean favorite){
-        if (favorite != false){
-            favorite = true;
-        }else{
-            favorite = false;
-        }
-    }
-
 }

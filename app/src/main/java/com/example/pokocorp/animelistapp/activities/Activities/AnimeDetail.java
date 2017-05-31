@@ -2,6 +2,8 @@ package com.example.pokocorp.animelistapp.activities.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +18,6 @@ import butterknife.ButterKnife;
  */
 
 public class AnimeDetail extends AppCompatActivity {
-    Anime anime;
     @BindView(R.id.anime_image_detail)
     ImageView IV_image;
     @BindView(R.id.anime_title)
@@ -29,6 +30,10 @@ public class AnimeDetail extends AppCompatActivity {
     TextView TV_episodes;
     @BindView(R.id.anime_sysnopsis)
     TextView TV_synopsis;
+    @BindView(R.id.add_mylist)
+    Button btn_mylist;
+    @BindView(R.id.add_favorites)
+    Button btn_favorites;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +47,13 @@ public class AnimeDetail extends AppCompatActivity {
         TV_genres.setText(getIntent().getStringExtra("genres"));
         TV_synopsis.setText(getIntent().getStringExtra("synopsis"));
         TV_episodes.setText(getIntent().getStringExtra("episodes"));
+
+        btn_mylist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btn_mylist.setVisibility(View.INVISIBLE);
+            }
+        });
 
     }
 
