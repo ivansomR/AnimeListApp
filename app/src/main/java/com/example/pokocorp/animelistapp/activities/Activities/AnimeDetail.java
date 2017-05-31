@@ -1,5 +1,8 @@
 package com.example.pokocorp.animelistapp.activities.Activities;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.pokocorp.animelistapp.R;
+import com.example.pokocorp.animelistapp.activities.Fragments.Mylist;
 import com.example.pokocorp.animelistapp.activities.Models.Anime;
 
 import butterknife.BindView;
@@ -17,7 +21,7 @@ import butterknife.ButterKnife;
  * Created by Ivan Somarriba on 5/30/2017.
  */
 
-public class AnimeDetail extends AppCompatActivity {
+public class AnimeDetail extends AppCompatActivity{
     Anime anime;
     @BindView(R.id.anime_image_detail)
     ImageView IV_image;
@@ -54,6 +58,7 @@ public class AnimeDetail extends AppCompatActivity {
             TV_synopsis.setText(anime.getSynopsis());
 
             btn_mylist.setOnClickListener(new View.OnClickListener() {
+
                 @Override
                 public void onClick(View v) {
                     anime.setMylist(true);
