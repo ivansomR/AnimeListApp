@@ -75,4 +75,24 @@ public class Anime implements Serializable{
     public boolean isFavorite() {
         return favorite;
     }
+
+    public void setEpisodes(int episodes) {
+        this.episodes = episodes;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public void setMylist(boolean mylist){
+        this.mylist = mylist;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 }

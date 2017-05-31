@@ -28,6 +28,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.pokocorp.animelistapp.activities.Activities.AnimeDetail" />
         </activity>
+
+        <activity
+            android:name=".activities.Activities.AnimeFavorite"
+            android:label="@string/anime_detail"
+            android:parentActivityName=".activities.Activities.Navigation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pokocorp.animelistapp.activities.Activities.AnimeFavorite" />
+        </activity>
     </application>
 
 </manifest>

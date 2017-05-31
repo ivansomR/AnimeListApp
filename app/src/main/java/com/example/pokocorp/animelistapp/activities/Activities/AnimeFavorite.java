@@ -14,10 +14,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by Ivan Somarriba on 5/30/2017.
+ * Created by Ivan Somarriba on 5/31/2017.
  */
 
-public class AnimeDetail extends AppCompatActivity {
+public class AnimeFavorite extends AppCompatActivity {
     Anime anime;
     @BindView(R.id.anime_image_detail)
     ImageView IV_image;
@@ -31,15 +31,13 @@ public class AnimeDetail extends AppCompatActivity {
     TextView TV_episodes;
     @BindView(R.id.anime_sysnopsis)
     TextView TV_synopsis;
-    @BindView(R.id.add_mylist)
-    Button btn_mylist;
-    @BindView(R.id.add_favorites)
-    Button btn_favorites;
+    @BindView(R.id.anime_score)
+    TextView TV_score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anime_detail);
+        setContentView(R.layout.activity_anime_favorite_detail);
         ButterKnife.bind(this);
 
         Bundle extras = getIntent().getExtras();
@@ -50,16 +48,9 @@ public class AnimeDetail extends AppCompatActivity {
             TV_title.setText(anime.getName());
             TV_type.setText(anime.getType());
             TV_episodes.setText(String.valueOf(anime.getEpisodes()));
+            TV_score.setText(String.valueOf(anime.getScore()));
             TV_genres.setText(anime.getGenre());
             TV_synopsis.setText(anime.getSynopsis());
-
-            btn_mylist.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    anime.setMylist(true);
-                }
-            });
         }
     }
-
 }

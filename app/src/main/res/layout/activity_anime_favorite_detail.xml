@@ -41,7 +41,7 @@
             android:layout_alignStart="@+id/anime_title" />
 
         <Button
-            android:id="@+id/add_mylist"
+            android:id="@+id/remove_favorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/anime_image_detail"
@@ -52,37 +52,22 @@
             android:layout_marginTop="19dp"
             android:background="@color/add_button_background"
             android:gravity="center"
-            android:text="@string/button_add_mylist"
+            android:text="@string/button_remove_fav"
             android:textAlignment="gravity"
             android:textColor="@color/add_button_text"
             android:textSize="12sp"
             android:visibility="visible"/>
-
-        <Button
-            android:id="@+id/add_favorites"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/add_button_background"
-            android:elevation="0dp"
-            android:gravity="center"
-            android:text="@string/button_add_fav"
-            android:textAlignment="gravity"
-            android:textColor="@color/add_button_text"
-            android:textSize="12sp"
-            android:layout_alignTop="@+id/add_mylist"
-            android:layout_alignRight="@+id/episodes_detail"
-            android:layout_alignEnd="@+id/episodes_detail" />
 
         <TextView
             style="@style/StaticTextLarge"
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/add_mylist"
+            android:layout_alignLeft="@+id/remove_favorite"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignStart="@+id/add_mylist"
-            android:layout_below="@+id/add_mylist"
+            android:layout_alignStart="@+id/remove_favorite"
+            android:layout_below="@+id/remove_favorite"
             android:layout_marginTop="21dp"
             android:text="@string/anime_genre" />
 
@@ -102,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/anime_episodes"
-            android:layout_alignBottom="@+id/anime_image_detail"
+            android:layout_alignTop="@+id/remove_favorite"
             android:layout_alignLeft="@+id/anime_type"
             android:layout_alignStart="@+id/anime_type" />
 
@@ -140,6 +125,29 @@
             android:layout_below="@+id/textView19"
             android:textColor="#000000"
             android:text="When a mysterious creature chops the moon down to a permanent crescent, the students of class 3-E of Kunugigaoka Middle School find themselves confronted with an enormous task: assassinate the creature responsible for the disaster before Earth suffers a similar fate. However, the monster, dubbed Koro-sensei (the indestructible teacher), is able to fly at speeds of up to Mach 20, which he demonstrates freely, leaving any attempt to subdue him in his extraterrestrial dust. Furthermore, the misfits of 3-E soon find that the strange, tentacled beast is more than just indomitable—he is the best teacher they have ever had!"/>
+
+        <TextView
+            android:id="@+id/anime_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_alignBaseline="@+id/TV_score_tag"
+            android:layout_alignBottom="@+id/TV_score_tag"
+            android:layout_alignRight="@+id/episodes_detail"
+            android:layout_alignEnd="@+id/episodes_detail"
+            android:textStyle="bold"
+            android:textColor="@color/detail_anime_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            style="@style/StaticTextMedium"
+            android:id="@+id/TV_score_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/remove_favorite"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:text="@string/anime_score" />
     </RelativeLayout>
 
 </ScrollView>
