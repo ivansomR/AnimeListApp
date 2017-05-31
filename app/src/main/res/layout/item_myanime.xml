@@ -51,26 +51,16 @@
             android:text="@string/anime_score" />
 
         <TextView
-            style="@style/StaticTextSmall"
             android:id="@+id/TV_score"
+            style="@style/StaticTextSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/TV_score_tag"
             android:layout_alignStart="@+id/TV_score_tag"
-            android:layout_below="@+id/S_episode"
+            android:layout_below="@+id/TV_score_tag"
             android:layout_marginTop="18dp"
-            android:textAlignment="center"
-            android:text="TextView" />
-
-        <Spinner
-            android:id="@+id/S_episode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/TV_score_tag"
-            android:layout_marginEnd="34dp"
-            android:layout_marginRight="34dp" />
+            android:text="TextView"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 

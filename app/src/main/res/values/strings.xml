@@ -20,4 +20,5 @@
     <string name="button_add_mylist">Add to MyList</string>
     <string name="button_add_fav">Add to Favorites</string>
     <string name="button_remove_fav">Remove Favorite</string>
+    <string name="button_remove_list">Remove from MyList</string>
 </resources>
